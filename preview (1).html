@@ -1,129 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SMART RADIO ONE</title>
-<style>
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:#fff;color:#111}
-header{padding:80px 8%;background:#f7f7f7}
-h1{font-size:72px;margin:0}
-h2{font-size:44px;margin-bottom:20px}
-h3{font-size:28px}
-p,li{font-size:18px;line-height:1.7;color:#444}
-.heroimg{width:100%;max-width:1200px;display:block;margin:40px auto}
-.section{padding:80px 8%;border-top:1px solid #e5e5e5}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-.card{background:#fafafa;padding:24px;border-radius:18px;border:1px solid #eee}
-.spec{width:100%;border-collapse:collapse}
-.spec td{padding:12px;border-bottom:1px solid #ddd}
-.badge{display:inline-block;padding:8px 14px;border-radius:20px;background:#eef6ff}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART RADIO ONE | Borderless Communication</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { background: #ffffff; color: #111; font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body>
+<body class="text-gray-900">
 
-<header>
-<span class="badge">OEM DEVELOPMENT PROGRAM</span>
-<h1>SMART RADIO ONE</h1>
-<p><b>Private Communications Infrastructure. Reinvented.</b></p>
-<p>Plataforma de comunicaciones off-grid que integra VHF, UHF, HF, LoRa Mesh, GPS, Wi‑Fi, Bluetooth, energía solar y control total desde smartphone.</p>
-<img class="heroimg" src="ChatGPT Image Jun 8, 2026, 10_44_24 AM.png">
-</header>
+    <nav class="flex justify-between items-center px-10 py-6 sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <span class="font-black text-xl tracking-tighter">SMART RADIO ONE</span>
+        <a href="#contact" class="bg-black text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-gray-800 transition">Contact Us</a>
+    </nav>
 
-<section class="section">
-<h2>La radio reinventada</h2>
-<p>SMART RADIO ONE elimina la pantalla, los menús físicos complejos y los puntos de falla tradicionales. Toda la inteligencia reside en la aplicación móvil, mientras que el hardware se convierte en una plataforma robusta, sellada y optimizada para operar en entornos extremos.</p>
-</section>
+    <header class="py-24 px-6 text-center">
+        <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tighter">Communication without limits.</h1>
+        <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-16">The ultimate tactical platform. SDR radio, LoRa Mesh network, military-grade encryption, and solar autonomy in an indestructible aluminum chassis.</p>
+        
+        <img src="https://drive.google.com/uc?export=view&id=1UGOKxIQOJnlB7d5JRfqDp7-v3ACcFcr-" 
+             alt="Smart Radio One" 
+             class="max-w-5xl w-full mx-auto rounded-3xl shadow-2xl hover:scale-[1.01] transition duration-500">
+    </header>
 
-<section class="section">
-<h2>Arquitectura RF</h2>
-<div class="grid">
-<div class="card"><h3>Doble BK4829</h3><p>Arquitectura dual para escucha simultánea, operación cruzada y repetidor autónomo.</p></div>
-<div class="card"><h3>HF SI4732</h3><p>Recepción 18–30 MHz para onda corta y monitoreo HF.</p></div>
-<div class="card"><h3>LoRa SX1262</h3><p>Red Mesh, telemetría, GPS y mensajería de largo alcance.</p></div>
-<div class="card"><h3>ESP32‑S3</h3><p>Control global mediante Bluetooth, Wi‑Fi y servidor web integrado.</p></div>
-</div>
-</section>
+    <section class="max-w-6xl mx-auto py-24 px-6">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-8">The end of dead zones</h2>
+                <p class="text-lg text-gray-600 mb-6">SMART RADIO ONE is more than a radio; it's your private tactical infrastructure. Designed for expeditions where mobile coverage fails, this device ensures you stay connected with your team under any condition.</p>
+                <ul class="space-y-4 font-semibold">
+                    <li class="flex items-center gap-3">✓ LoRa Mesh Network: Chat and GPS without external towers</li>
+                    <li class="flex items-center gap-3">✓ Headless Control: Full management via smartphone</li>
+                    <li class="flex items-center gap-3">✓ Infinite Power: Integrated solar and advanced thermal management</li>
+                    <li class="flex items-center gap-3">✓ Bulletproof Security: Bank-grade AES-256 encryption</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-6">Monolithic Architecture</h3>
+                <p class="text-gray-600">CNC aluminum, IP67 sealed, no moving parts. A minimalist design housing a 20W power beast, ready for the most demanding deployments.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="section">
-<h2>Bandas y Cobertura</h2>
-<ul>
-<li>HF: 18–30 MHz</li>
-<li>VHF: 136–174 MHz</li>
-<li>UHF: 400–520 MHz</li>
-<li>LoRa: 902–928 MHz</li>
-</ul>
-</section>
+    <section class="bg-gray-50 py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-16 text-center">Engineering Technical Specs</h2>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <table class="w-full text-left">
+                    <tr class="border-b border-gray-100"><th class="py-5">RF Coverage</th><td class="py-5 text-gray-600">HF/VHF/UHF (18MHz - 1.3GHz)</td></tr>
+                    <tr class="border-b border-gray-100"><th class="py-5">TX Power</th><td class="py-5 text-gray-600">1W to 20W (Dynamic adjustment)</td></tr>
+                    <tr class="border-b border-gray-100"><th class="py-5">Security</th><td class="py-5 text-gray-600">AES-256, Zeroize, Biometric App Auth</td></tr>
+                    <tr class="border-b border-gray-100"><th class="py-5">Mesh Comm</th><td class="py-5 text-gray-600">LoRa 915MHz (GPS, Telemetry)</td></tr>
+                    <tr class="border-b border-gray-100"><th class="py-5">Construction</th><td class="py-5 text-gray-600">Anodized Aluminum IP67 / PCM Gel</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
 
-<section class="section">
-<h2>Potencia profesional</h2>
-<p>Perfiles configurables Eco, Handy, Tactical y Boost con salida de hasta 20W y control térmico dinámico.</p>
-<ul>
-<li>Eco: 100 mW – 1W</li>
-<li>Handy: 5W</li>
-<li>Tactical: 10W</li>
-<li>Boost: 15–20W</li>
-</ul>
-</section>
-
-<section class="section">
-<h2>Funciones avanzadas</h2>
-<div class="grid">
-<div class="card"><h3>Cross‑Band Repeater</h3><p>Transforma el equipo en repetidor portátil autónomo.</p></div>
-<div class="card"><h3>Waterfall Spectrum</h3><p>Analizador de espectro desde HF hasta UHF.</p></div>
-<div class="card"><h3>Frequency Cloning</h3><p>Detección automática de frecuencia, subtonos y modulación.</p></div>
-<div class="card"><h3>DMR + AES‑256</h3><p>Compatibilidad con sistemas DMR y cifrado avanzado.</p></div>
-</div>
-</section>
-
-<section class="section">
-<h2>Red Mesh y GPS</h2>
-<p>Cada radio puede actuar como nodo de una red privada. Comparte ubicación, mensajes, alertas SOS y telemetría sin depender de internet o redes celulares.</p>
-</section>
-
-<section class="section">
-<h2>Chat táctico fuera de red</h2>
-<p>Mensajería estilo aplicación móvil con texto, ubicaciones, notas de voz y confirmaciones de entrega utilizando LoRa y Codec2.</p>
-</section>
-
-<section class="section">
-<h2>Conectividad Global</h2>
-<p>Bluetooth LE, Wi‑Fi, túneles cifrados TLS, servidor web autónomo y capacidad de integración con redes IP y enlaces satelitales.</p>
-</section>
-
-<section class="section">
-<h2>Energía Solar y Power Bank</h2>
-<p>Panel solar monocristalino frontal integrado y puerto USB‑C Dual Role para carga o alimentación de dispositivos externos.</p>
-</section>
-
-<section class="section">
-<h2>Seguridad</h2>
-<ul>
-<li>AES‑256</li>
-<li>Key Vault</li>
-<li>Autenticación biométrica en la app</li>
-<li>Zeroize remoto</li>
-<li>Kill Packet</li>
-</ul>
-</section>
-
-<section class="section">
-<h2>Especificaciones técnicas</h2>
-<table class="spec">
-<tr><td>Dimensiones</td><td>165 × 90 × 40 mm</td></tr>
-<tr><td>Bandas</td><td>HF / VHF / UHF / LoRa</td></tr>
-<tr><td>Potencia</td><td>1–20W</td></tr>
-<tr><td>Conectividad</td><td>Bluetooth LE, Wi‑Fi, USB‑C</td></tr>
-<tr><td>Control</td><td>Aplicación iOS y Android</td></tr>
-<tr><td>Chasis</td><td>Aluminio disipador</td></tr>
-<tr><td>Energía</td><td>Solar + baterías Li‑Ion</td></tr>
-</table>
-</section>
-
-<section class="section">
-<h2>Estado del Proyecto</h2>
-<p>Diseño industrial, desarrollo electrónico, firmware, aplicación móvil, validación RF, evaluación OEM y planificación de certificaciones.</p>
-</section>
+    <footer id="contact" class="py-24 text-center">
+        <h2 class="text-3xl font-bold mb-8">Ready to scale the project?</h2>
+        <a href="mailto:onesmartradio@gmail.com" class="bg-black text-white px-12 py-5 rounded-full font-bold hover:bg-gray-800 transition">Contact Development Team</a>
+        <p class="text-gray-400 text-sm mt-12">© 2026 SMART RADIO ONE | DESIGNED FOR MISSION-CRITICAL ENVIRONMENTS</p>
+    </footer>
 
 </body>
 </html>
