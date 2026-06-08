@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMART RADIO ONE | Infraestructura Táctica Profesional</title>
+    <title>SMART RADIO ONE | Tactical Infrastructure</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
-        body { background: #ffffff; color: #111; font-family: 'Inter', sans-serif; }
-    </style>
 </head>
-<body class="text-gray-900">
+<body class="bg-black text-white font-sans">
 
-    <nav class="flex justify-between items-center px-6 py-6 sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
-        <span class="font-black text-lg tracking-tighter">SMART RADIO ONE</span>
-        <a href="#contacto" class="bg-black text-white px-5 py-2 rounded-full font-bold text-xs hover:bg-gray-800 transition uppercase">Contacto</a>
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800">
+        <span class="text-xl font-black tracking-tighter">SMART RADIO ONE</span>
+        <a href="#contact" class="bg-white text-black px-5 py-2 rounded-full font-bold text-xs uppercase hover:bg-gray-200 transition">Contact</a>
     </nav>
 
-    <header class="py-16 px-6 text-center">
-        <h1 class="text-4xl md:text-8xl font-black mb-6 tracking-tighter">Telecomunicaciones<br>sin límites.</h1>
-        <p class="text-lg md:text-2xl text-gray-600 max-w-3xl mx-auto mb-12">SMART RADIO ONE es una infraestructura de comunicación privada, indestructible y global. Potencia de base móvil con inteligencia criptográfica militar en un chasis sellado IP67.</p>
+    <header class="py-20 px-6 text-center">
+        <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter">Communication<br>Without Limits.</h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">The ultimate tactical platform. SDR radio, LoRa Mesh network, and military-grade encryption in an indestructible, IP67-sealed monolithic chassis[cite: 3, 5].</p>
         
-        <div class="max-w-4xl mx-auto mb-12 flex justify-center">
+        <div class="max-w-4xl mx-auto mb-12">
             <blockquote class="imgur-embed-pub" lang="en" data-id="a/yByTBdg">
                 <a href="//imgur.com/a/yByTBdg">Smart Radio</a>
             </blockquote>
@@ -29,39 +25,56 @@
         </div>
     </header>
 
-    <section class="max-w-5xl mx-auto py-16 px-6">
-        <h2 class="text-3xl md:text-5xl font-black mb-10 tracking-tighter">Ingeniería para entornos críticos</h2>
-        <div class="space-y-6 text-gray-700 text-lg">
-            <p>Hemos eliminado toda vulnerabilidad mecánica. Sin pantallas que se astillen ni perillas expuestas. Un dispositivo liso, "ciego" y sellado, diseñado para el despliegue más exigente.</p>
-            
-            <h3 class="text-2xl font-bold mt-10">Funciones de Supervivencia Táctica</h3>
-            <ul class="list-disc pl-6 space-y-4">
-                <li><strong>Modo Rescate de Emergencia:</strong> Activación protegida que fuerza 20W Boost, enviando balizas GPS por LoRa e inyectando un mensaje de voz en bucle en canales FM.</li>
-                <li><strong>SWR Virtual (Salud de Antena):</strong> Gráfico de potencia directa/reflejada para proteger los FETs ante daños en la antena.</li>
-                <li><strong>Modo Zeroize:</strong> Borrado total de llaves criptográficas ante robo o pérdida, con ejecución automática tras 48hs de desconexión.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="bg-gray-50 py-16 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-black mb-10 text-center tracking-tighter">Especificaciones Técnicas</h2>
-            <div class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-100 overflow-x-auto">
-                <table class="w-full text-left">
-                    <tr class="border-b border-gray-100"><th class="py-4">RF Chipset</th><td class="py-4 text-gray-600">Doble Beken BK4829 (Alta inmunidad al ruido)</td></tr>
-                    <tr class="border-b border-gray-100"><th class="py-4">RF Coverage</th><td class="py-4 text-gray-600">HF/VHF/UHF (18MHz - 1.3GHz)</td></tr>
-                    <tr class="border-b border-gray-100"><th class="py-4">Seguridad</th><td class="py-4 text-gray-600">AES-256 digital / Compatibilidad DMR Tier II</td></tr>
-                    <tr class="border-b border-gray-100"><th class="py-4">Mesh</th><td class="py-4 text-gray-600">LoRa 915MHz (5W) para telemetría y GPS</td></tr>
-                    <tr class="border-b border-gray-100"><th class="py-4">Construcción</th><td class="py-4 text-gray-600">Aluminio CNC anodizado / Sellado IP67</td></tr>
-                </table>
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-black mb-12 border-l-4 border-white pl-6">Core Engineering</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">RF & Cross-Band Architecture</h3>
+                <p class="text-gray-400 mb-6">Dual Beken BK4829 transceivers enable simultaneous cross-band operation and autonomous repeater functions[cite: 10, 11]. Integrated Silicon Labs SI4732 coprocessor allows HF band reception (18MHz - 30MHz) and real-time spectrum waterfall analysis[cite: 12, 13].</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Tactical Mesh Network</h3>
+                <p class="text-gray-400 mb-6">Dedicated Semtech SX1262 LoRa transceiver providing 5W of power for long-range telemetry, GPS coordination, and Codec2 digital voice transmission, even when FM/DMR is lost[cite: 15, 22].</p>
             </div>
         </div>
     </section>
 
-    <footer id="contacto" class="py-16 text-center px-6">
-        <h2 class="text-2xl font-bold mb-6">¿Listo para llevar el proyecto al siguiente nivel?</h2>
-        <a href="mailto:onesmartradio@gmail.com" class="block md:inline-block bg-black text-white px-10 py-4 rounded-full font-bold hover:bg-gray-800 transition">Contactar equipo de desarrollo</a>
-        <p class="text-gray-400 text-xs mt-10">© 2026 SMART RADIO ONE | DISEÑADO PARA ENTORNOS CRÍTICOS</p>
+    <section class="bg-gray-900 py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-black mb-12 text-center">Survival & Tactical Protocols</h2>
+            <div class="grid gap-6">
+                <div class="p-8 bg-black rounded-3xl border border-gray-800">
+                    <h4 class="font-bold text-lg mb-2">Emergency Rescue Mode</h4>
+                    <p class="text-gray-400">Forces 20W Boost, transmits GPS beacons via LoRa, and injects synthesized voice distress messages into local FM emergency channels[cite: 134, 136, 138].</p>
+                </div>
+                <div class="p-8 bg-black rounded-3xl border border-gray-800">
+                    <h4 class="font-bold text-lg mb-2">Zeroize & Security</h4>
+                    <p class="text-gray-400">Hardware-level AES-256 encryption. Remote or automatic 48-hour "Zeroize" protocol wipes all flash memory keys if the device is lost or compromised[cite: 19, 142, 143].</p>
+                </div>
+                <div class="p-8 bg-black rounded-3xl border border-gray-800">
+                    <h4 class="font-bold text-lg mb-2">Power Management</h4>
+                    <p class="text-gray-400">Synchronous Buck-Boost regulation maintains 12.5V constant output. Thermal throttling dynamically adjusts wattage based on NTC sensor readings to protect internal Mitsubishi FETs[cite: 25, 27, 28].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-4xl font-black mb-12 text-center">Specifications (16.5 x 9 x 4 cm)</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <tr class="border-b border-gray-800"><th class="py-4">RF Chipset</th><td class="py-4 text-gray-400">Dual Beken BK4829</td></tr>
+                <tr class="border-b border-gray-800"><th class="py-4">Frequency</th><td class="py-4 text-gray-400">HF/VHF/UHF (18MHz - 1.3GHz)</td></tr>
+                <tr class="border-b border-gray-100"><th class="py-4">Encryption</th><td class="py-4 text-gray-400">AES-256 (DMR Tier II compatible) [cite: 20, 21]</td></tr>
+                <tr class="border-b border-gray-100"><th class="py-4">Build</th><td class="py-4 text-gray-400">CNC Aluminum, IP67 Sealed [cite: 5]</td></tr>
+                <tr class="border-b border-gray-100"><th class="py-4">Solar</th><td class="py-4 text-gray-600">Integrated 2W Monocrystalline panel [cite: 35]</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 text-center border-t border-gray-800">
+        <h2 class="text-3xl font-bold mb-6">Mission-Critical Ready.</h2>
+        <a href="mailto:onesmartradio@gmail.com" class="inline-block bg-white text-black px-12 py-4 rounded-full font-bold hover:bg-gray-200 transition">Contact Development</a>
     </footer>
 
 </body>
