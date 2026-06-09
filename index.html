@@ -1,81 +1,140 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMART RADIO ONE | Tactical Infrastructure</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Radio Ecosystem</title>
+<style>
+body{font-family:Inter,Arial,sans-serif;margin:0;color:#111;line-height:1.6}
+nav{position:sticky;top:0;background:#fff;padding:18px 6%;border-bottom:1px solid #eee;z-index:100}
+.hero{height:85vh;background:#f5f5f7;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h1{font-size:72px;margin:0}
+.hero p{max-width:900px;color:#666}
+.section{padding:90px 7%}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin:100px 0}
+.product img{width:100%;border-radius:20px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.features div{background:#f5f5f7;padding:10px;border-radius:8px}
+.compare table{width:100%;border-collapse:collapse}
+.compare th,.compare td{border:1px solid #ddd;padding:12px}
+.field{text-align:center}
+.smallimg{max-width:550px;width:100%;margin:auto;display:block}
+.cta{text-align:center;padding:100px 7%;background:#f5f5f7}
+footer{background:#111;color:#fff;text-align:center;padding:60px 20px}
+footer a{color:#fff}
+@media(max-width:900px){.product{grid-template-columns:1fr}.hero h1{font-size:42px}.features{grid-template-columns:1fr}}
+</style>
 </head>
-<body class="bg-black text-white font-sans">
+<body>
+<nav><strong>SMART RADIO ECOSYSTEM</strong></nav>
 
-    <nav class="p-6 flex justify-between items-center border-b border-gray-800">
-        <span class="text-xl font-black tracking-tighter">SMART RADIO ONE</span>
-        <a href="#contact" class="bg-white text-black px-5 py-2 rounded-full font-bold text-xs uppercase hover:bg-gray-200 transition">Contact</a>
-    </nav>
+<section class="hero">
+<div>
+<h1>COMMUNICATE ANYWHERE</h1>
+<p>Voice. Data. Location. The first solar-powered communications ecosystem combining professional radio, LoRa mesh networking, GPS tracking and off-grid connectivity.</p>
+</div>
+</section>
 
-    <header class="py-20 px-6 text-center">
-        <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter">Communication<br>Without Limits.</h1>
-        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">The ultimate tactical platform. SDR radio, LoRa Mesh network, and military-grade encryption in an indestructible, IP67-sealed monolithic chassis[cite: 3, 5].</p>
-        
-        <div class="max-w-4xl mx-auto mb-12">
-            <blockquote class="imgur-embed-pub" lang="en" data-id="a/yByTBdg">
-                <a href="//imgur.com/a/yByTBdg">Smart Radio</a>
-            </blockquote>
-            <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-        </div>
-    </header>
+<section class="section">
+<h2 style="text-align:center;font-size:42px">One Ecosystem. Three Missions.</h2>
 
-    <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-4xl font-black mb-12 border-l-4 border-white pl-6">Core Engineering</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h3 class="text-2xl font-bold mb-4">RF & Cross-Band Architecture</h3>
-                <p class="text-gray-400 mb-6">Dual Beken BK4829 transceivers enable simultaneous cross-band operation and autonomous repeater functions[cite: 10, 11]. Integrated Silicon Labs SI4732 coprocessor allows HF band reception (18MHz - 30MHz) and real-time spectrum waterfall analysis[cite: 12, 13].</p>
-            </div>
-            <div>
-                <h3 class="text-2xl font-bold mb-4">Tactical Mesh Network</h3>
-                <p class="text-gray-400 mb-6">Dedicated Semtech SX1262 LoRa transceiver providing 5W of power for long-range telemetry, GPS coordination, and Codec2 digital voice transmission, even when FM/DMR is lost[cite: 15, 22].</p>
-            </div>
-        </div>
-    </section>
+<div class="product">
+<img src="http://demestrade.com/10.png">
+<div>
+<h2>SMART RADIO AIR</h2>
+<h4>Voice Everywhere</h4>
+<p>Professional voice communications platform with advanced spectrum monitoring, frequency discovery and smartphone control.</p>
+<div class="features">
+<div>✓ HF (18-30 MHz)</div><div>✓ FM (64-108 MHz)</div>
+<div>✓ Air Band AM (108-136 MHz)</div><div>✓ VHF (136-174 MHz)</div>
+<div>✓ UHF (400-520 MHz)</div><div>✓ Up to 10W RF Output</div>
+<div>✓ Spectrum Analyzer</div><div>✓ Frequency Cloning</div>
+<div>✓ Analog & Digital Voice</div><div>✓ Bluetooth + WiFi</div>
+<div>✓ Solar Charging</div><div>✓ USB-C Power Bank</div>
+</div>
+</div>
+</div>
 
-    <section class="bg-gray-900 py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-black mb-12 text-center">Survival & Tactical Protocols</h2>
-            <div class="grid gap-6">
-                <div class="p-8 bg-black rounded-3xl border border-gray-800">
-                    <h4 class="font-bold text-lg mb-2">Emergency Rescue Mode</h4>
-                    <p class="text-gray-400">Forces 20W Boost, transmits GPS beacons via LoRa, and injects synthesized voice distress messages into local FM emergency channels[cite: 134, 136, 138].</p>
-                </div>
-                <div class="p-8 bg-black rounded-3xl border border-gray-800">
-                    <h4 class="font-bold text-lg mb-2">Zeroize & Security</h4>
-                    <p class="text-gray-400">Hardware-level AES-256 encryption. Remote or automatic 48-hour "Zeroize" protocol wipes all flash memory keys if the device is lost or compromised[cite: 19, 142, 143].</p>
-                </div>
-                <div class="p-8 bg-black rounded-3xl border border-gray-800">
-                    <h4 class="font-bold text-lg mb-2">Power Management</h4>
-                    <p class="text-gray-400">Synchronous Buck-Boost regulation maintains 12.5V constant output. Thermal throttling dynamically adjusts wattage based on NTC sensor readings to protect internal Mitsubishi FETs[cite: 25, 27, 28].</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="product">
+<div>
+<h2>SMART MESH</h2>
+<h4>Never Lose Your Team</h4>
+<p>Long-range LoRa network for off-grid messaging, GPS tracking, offline navigation and emergency response.</p>
+<div class="features">
+<div>✓ 5W LoRa</div><div>✓ GPS</div>
+<div>✓ Galileo</div><div>✓ GLONASS</div>
+<div>✓ BeiDou</div><div>✓ Offline Maps</div>
+<div>✓ Mesh Networking</div><div>✓ Team Tracking</div>
+<div>✓ Secure Messaging</div><div>✓ Physical SOS Button</div>
+<div>✓ Emergency GPS Beacon</div><div>✓ Solar Charging</div>
+</div>
+</div>
+<img src="http://demestrade.com/6.png">
+</div>
 
-    <section class="py-20 px-6 max-w-4xl mx-auto">
-        <h2 class="text-4xl font-black mb-12 text-center">Specifications (16.5 x 9 x 4 cm)</h2>
-        <div class="overflow-x-auto">
-            <table class="w-full text-left border-collapse">
-                <tr class="border-b border-gray-800"><th class="py-4">RF Chipset</th><td class="py-4 text-gray-400">Dual Beken BK4829</td></tr>
-                <tr class="border-b border-gray-800"><th class="py-4">Frequency</th><td class="py-4 text-gray-400">HF/VHF/UHF (18MHz - 1.3GHz)</td></tr>
-                <tr class="border-b border-gray-100"><th class="py-4">Encryption</th><td class="py-4 text-gray-400">AES-256 (DMR Tier II compatible) [cite: 20, 21]</td></tr>
-                <tr class="border-b border-gray-100"><th class="py-4">Build</th><td class="py-4 text-gray-400">CNC Aluminum, IP67 Sealed [cite: 5]</td></tr>
-                <tr class="border-b border-gray-100"><th class="py-4">Solar</th><td class="py-4 text-gray-600">Integrated 2W Monocrystalline panel [cite: 35]</td></tr>
-            </table>
-        </div>
-    </section>
+<div class="product">
+<img src="http://demestrade.com/11.png">
+<div>
+<h2>SMART RADIO V8</h2>
+<h4>Everything Everywhere</h4>
+<p>The flagship hybrid platform combining powerful radio communications, LoRa networking, GPS, encryption and emergency systems.</p>
+<div class="features">
+<div>✓ HF (18-30 MHz)</div><div>✓ FM (64-108 MHz)</div>
+<div>✓ Air Band AM (108-136 MHz)</div><div>✓ VHF (136-174 MHz)</div>
+<div>✓ UHF (400-520 MHz)</div><div>✓ Up to 20W RF Output</div>
+<div>✓ 5W LoRa Mesh</div><div>✓ Cross-Band Repeater</div>
+<div>✓ GPS Tracking</div><div>✓ AES-256 Encryption</div>
+<div>✓ Tactical Messaging</div><div>✓ Spectrum Analyzer</div>
+<div>✓ Frequency Cloning</div><div>✓ Global Remote Access</div>
+<div>✓ Solar Charging</div><div>✓ Aviation Grade SOS System</div>
+</div>
+</div>
+</div>
 
-    <footer id="contact" class="py-20 text-center border-t border-gray-800">
-        <h2 class="text-3xl font-bold mb-6">Mission-Critical Ready.</h2>
-        <a href="mailto:onesmartradio@gmail.com" class="inline-block bg-white text-black px-12 py-4 rounded-full font-bold hover:bg-gray-200 transition">Contact Development</a>
-    </footer>
+<div class="field">
+<h2>Engineered For The Field</h2>
+<p>Aircraft-grade aluminum construction designed for harsh environments.</p>
+<img class="smallimg" src="http://demestrade.com/5.png">
+</div>
 
+<div class="compare">
+<h2>Complete Comparison</h2>
+<table>
+<tr><th>Capability</th><th>AIR</th><th>MESH</th><th>V8</th></tr>
+<tr><td>Primary Mission</td><td>Voice</td><td>Data & Tracking</td><td>Hybrid</td></tr>
+<tr><td>Solar Charging</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Bluetooth</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>WiFi</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>HF/FM/AM/VHF/UHF Monitoring</td><td>✓</td><td>—</td><td>✓</td></tr>
+<tr><td>Voice Communications</td><td>✓</td><td>—</td><td>✓</td></tr>
+<tr><td>LoRa Mesh</td><td>—</td><td>✓</td><td>✓</td></tr>
+<tr><td>GPS</td><td>Optional</td><td>✓</td><td>✓</td></tr>
+<tr><td>Spectrum Analyzer</td><td>✓</td><td>—</td><td>✓</td></tr>
+<tr><td>Frequency Cloning</td><td>✓</td><td>—</td><td>✓</td></tr>
+<tr><td>Cross-Band Repeater</td><td>—</td><td>—</td><td>✓</td></tr>
+<tr><td>AES Encryption</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Physical SOS Button</td><td>—</td><td>✓</td><td>✓</td></tr>
+<tr><td>Global Remote Access</td><td>—</td><td>—</td><td>✓</td></tr>
+</table>
+</div>
+
+<h2>Which Smart Radio Is Right For You?</h2>
+<p><b>AIR:</b> Security, industrial operations, amateur radio and professional communications.</p>
+<p><b>MESH:</b> Overlanding, agriculture, expeditions, motorhomes and rescue teams.</p>
+<p><b>V8:</b> Emergency response, civil defense, SAR teams and mission-critical communications.</p>
+
+</section>
+
+<section class="cta">
+<h2>Ready To Communicate Anywhere?</h2>
+<p>OEM Manufacturing • Distribution Partners • Strategic Investors Welcome</p>
+</section>
+
+<footer>
+<h3>SMART RADIO ECOSYSTEM</h3>
+<p>Voice Everywhere • Never Lose Your Team • Everything Everywhere</p>
+<p>Contact Us: <a href="mailto:onesmartradio@gmail.com">onesmartradio@gmail.com</a></p>
+<p>© 2026 Smart Radio Ecosystem</p>
+</footer>
 </body>
 </html>
