@@ -99,15 +99,24 @@
             background: #ffffff !important;
         }
 
-        /* Aplicamos el filtro de fusión para eliminar los bordes grises de las fotos */
-        .hero .hero-images img,
-        .product img,
-        div img {
+        /* Corrección avanzada para aislar y eliminar recuadros/sombras grises en 12.png y 15.png */
+        .hero .hero-images img {
             max-width: 1300px;
             width: 100%;
             height: auto;
             border-radius: 20px;
-            mix-blend-mode: multiply; /* Vuelve transparente el fondo gris de la foto */
+            mix-blend-mode: multiply;
+            filter: contrast(1.08) brightness(1.02); /* Quema los bordes grises y las sombras para volverlos blanco puro */
+            background: #ffffff !important;
+        }
+
+        /* Estilo base para el resto de las imágenes de productos */
+        .product img,
+        div img {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+            mix-blend-mode: multiply; 
             background: #ffffff !important;
         }
 
@@ -151,11 +160,6 @@
             align-items: center;
             margin-bottom: 160px;
             background: #ffffff !important;
-        }
-
-        .product img {
-            width: 100%;
-            border-radius: 30px;
         }
 
         .product h3 {
