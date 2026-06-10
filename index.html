@@ -13,7 +13,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Forzamos a todo el cuerpo y estructura a ser blanco puro sin excepciones */
         body {
             font-family: 'Inter', sans-serif;
             background: #ffffff !important;
@@ -100,13 +99,16 @@
             background: #ffffff !important;
         }
 
-        .hero .hero-images img {
+        /* Aplicamos el filtro de fusión para eliminar los bordes grises de las fotos */
+        .hero .hero-images img,
+        .product img,
+        div img {
             max-width: 1300px;
             width: 100%;
             height: auto;
             border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-            background: #ffffff !important; /* Fondo de imagen blanco puro */
+            mix-blend-mode: multiply; /* Vuelve transparente el fondo gris de la foto */
+            background: #ffffff !important;
         }
 
         .btn {
@@ -154,8 +156,6 @@
         .product img {
             width: 100%;
             border-radius: 30px;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, .08);
-            background: #ffffff !important; /* Fondo de imagen de producto blanco puro */
         }
 
         .product h3 {
@@ -182,7 +182,7 @@
         }
 
         .features div {
-            background: #ffffff !important; /* Cuadrículas internas blancas */
+            background: #ffffff !important;
             border: 1px solid #eee;
             padding: 14px;
             border-radius: 12px;
@@ -203,7 +203,7 @@
         }
 
         .compare th {
-            background: #ffffff !important; /* Cabecera de tabla blanca */
+            background: #ffffff !important;
             color: #111;
             padding: 16px;
             font-weight: 700;
@@ -297,6 +297,7 @@
         </div>
     </section>
 
+    <!-- PRODUCT 1: AIR -->
     <section class="section" id="air">
         <div class="product">
             <img src="https://images.weserv.nl/?url=demestrade.com/10.png" alt="Smart Radio Air">
@@ -329,6 +330,7 @@
         </div>
     </section>
 
+    <!-- PRODUCT 2: MESH -->
     <section class="section" id="mesh">
         <div class="product">
             <div>
@@ -362,6 +364,7 @@
         </div>
     </section>
 
+    <!-- PRODUCT 3: V8 -->
     <section class="section" id="v8">
         <div class="product">
             <img src="https://images.weserv.nl/?url=demestrade.com/11.png" alt="Smart Radio V8">
@@ -435,6 +438,7 @@
         </div>
     </section>
 
+    <!-- COMPARISON TABLE -->
     <section class="compare" id="compare">
         <div class="center" style="margin-bottom: 60px;">
             <h2>Complete Product Comparison</h2>
