@@ -55,17 +55,20 @@
         }
 
         .hero {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             background: linear-gradient(to bottom, #ffffff, #f5f5f7);
-            padding: 120px 40px 40px 40px;
+            padding: 140px 40px 80px 40px;
         }
 
         .hero-content {
             max-width: 1100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .hero h1 {
@@ -82,6 +85,23 @@
             max-width: 900px;
             margin: auto;
             margin-bottom: 40px;
+        }
+
+        .hero .hero-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .hero .hero-images img {
+            max-width: 650px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
         }
 
         .btn {
@@ -234,6 +254,12 @@
                 Voice. Data. Location.
                 The first solar-powered communications ecosystem combining professional radio communications, LoRa mesh networking, GPS tracking and off-grid connectivity in a rugged aluminum platform built for the real world.
             </p>
+            
+            <div class="hero-images">
+                <img src="https://images.weserv.nl/?url=demestrade.com/12.png" alt="Ecosystem Showcase 1">
+                <img src="https://images.weserv.nl/?url=demestrade.com/15.png" alt="Ecosystem Showcase 2">
+            </div>
+
             <a href="#air" class="btn">Explore Products</a>
         </div>
     </section>
