@@ -13,9 +13,10 @@
             scroll-behavior: smooth;
         }
 
+        /* Forzamos a todo el cuerpo y estructura a ser blanco puro sin excepciones */
         body {
             font-family: 'Inter', sans-serif;
-            background: #ffffff;
+            background: #ffffff !important;
             color: #111;
             overflow-x: hidden;
             line-height: 1.6;
@@ -26,7 +27,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(20px);
             padding: 20px 8%;
             display: flex;
@@ -60,7 +61,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: #ffffff;
+            background: #ffffff !important;
             padding: 140px 40px 80px 40px;
         }
 
@@ -69,7 +70,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: #ffffff;
+            background: #ffffff !important;
         }
 
         .hero h1 {
@@ -96,7 +97,7 @@
             width: 100%;
             margin-top: 50px;
             margin-bottom: 40px;
-            background: #ffffff;
+            background: #ffffff !important;
         }
 
         .hero .hero-images img {
@@ -105,7 +106,7 @@
             height: auto;
             border-radius: 20px;
             box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-            background: #ffffff; /* Fondo de imagen 100% blanco */
+            background: #ffffff !important; /* Fondo de imagen blanco puro */
         }
 
         .btn {
@@ -120,7 +121,7 @@
 
         .section {
             padding: 140px 8%;
-            background: #ffffff;
+            background: #ffffff !important;
         }
 
         .center {
@@ -128,7 +129,7 @@
             max-width: 1000px;
             margin: auto;
             margin-bottom: 100px;
-            background: #ffffff;
+            background: #ffffff !important;
         }
 
         .center h2 {
@@ -147,14 +148,14 @@
             gap: 80px;
             align-items: center;
             margin-bottom: 160px;
-            background: #ffffff;
+            background: #ffffff !important;
         }
 
         .product img {
             width: 100%;
             border-radius: 30px;
             box-shadow: 0 25px 60px rgba(0, 0, 0, .08);
-            background: #ffffff; /* Fondo de imagen de producto 100% blanco */
+            background: #ffffff !important; /* Fondo de imagen de producto blanco puro */
         }
 
         .product h3 {
@@ -177,12 +178,12 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            background: #ffffff;
+            background: #ffffff !important;
         }
 
         .features div {
-            background: #ffffff; /* Cambiado de gris claro a blanco puro */
-            border: 1px solid #eee; /* Añadido un borde sutil para mantener estructura */
+            background: #ffffff !important; /* Cuadrículas internas blancas */
+            border: 1px solid #eee;
             padding: 14px;
             border-radius: 12px;
             font-size: .95rem;
@@ -190,19 +191,19 @@
 
         .compare {
             padding: 140px 8%;
-            background: #ffffff;
+            background: #ffffff !important;
             color: #111;
         }
 
         .compare table {
             width: 100%;
             border-collapse: collapse;
-            background: #ffffff;
+            background: #ffffff !important;
             color: black;
         }
 
         .compare th {
-            background: #ffffff; /* Eliminado el gris claro de la cabecera de la tabla */
+            background: #ffffff !important; /* Cabecera de tabla blanca */
             color: #111;
             padding: 16px;
             font-weight: 700;
@@ -213,7 +214,7 @@
             padding: 14px;
             border-bottom: 1px solid #eee;
             text-align: center;
-            background: #ffffff;
+            background: #ffffff !important;
         }
 
         footer {
@@ -395,117 +396,3 @@
                     <div>IP67 Protection</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="center">
-            <h2>Engineered For The Field</h2>
-            <p>
-                Built from aircraft-grade aluminum and designed to survive harsh environments, Smart Radio devices are engineered for professionals who operate where communications matter most.
-            </p>
-        </div>
-        <div style="text-align:center">
-            <img src="https://images.weserv.nl/?url=demestrade.com/5.png" style="max-width:550px; width:100%; border-radius:25px;" alt="Engineered for the field">
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="center">
-            <h2>One App. Total Control.</h2>
-            <p>
-                Manage every Smart Radio device from a single mobile application.
-                Configure frequencies, update firmware, track teams and monitor communications from anywhere.
-            </p>
-        </div>
-        <div class="features">
-            <div>Remote Programming</div>
-            <div>Spectrum Analysis</div>
-            <div>GPS Monitoring</div>
-            <div>Team Tracking</div>
-            <div>Offline Maps</div>
-            <div>Secure Messaging</div>
-            <div>Emergency Alerts</div>
-            <div>Firmware Updates</div>
-            <div>Device Diagnostics</div>
-            <div>Frequency Management</div>
-            <div>Cloud Synchronization</div>
-            <div>Mesh Network Monitoring</div>
-        </div>
-    </section>
-
-    <section class="compare" id="compare">
-        <div class="center" style="margin-bottom: 60px;">
-            <h2>Complete Product Comparison</h2>
-        </div>
-        <table>
-            <tr>
-                <th>Capability</th>
-                <th>AIR</th>
-                <th>MESH</th>
-                <th>V8</th>
-            </tr>
-            <tr><td>Voice Communications</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>HF Monitoring</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>FM Monitoring</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>Air Band Monitoring</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>VHF Communications</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>UHF Communications</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>Maximum RF Power</td><td>10W</td><td>5W</td><td>20W</td></tr>
-            <tr><td>LoRa Communications</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Mesh Networking</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>GPS</td><td>Optional</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Galileo</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>GLONASS</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>BeiDou</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Offline Maps</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Team Tracking</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Secure Messaging</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Spectrum Analyzer</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>Frequency Discovery</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>Frequency Cloning</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>Cross-Band Repeater</td><td>—</td><td>—</td><td>✓</td></tr>
-            <tr><td>AES Encryption</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Bluetooth</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>WiFi</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>USB-C</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Power Bank</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Solar Charging</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Emergency SOS</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Emergency GPS Beacon</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Global Remote Access</td><td>—</td><td>—</td><td>✓</td></tr>
-            <tr><td>Aircraft Aluminum</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>IP67 Protection</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Ideal For Security</td><td>✓</td><td>—</td><td>✓</td></tr>
-            <tr><td>Ideal For Industry</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Ideal For Expeditions</td><td>✓</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Ideal For Rescue Teams</td><td>—</td><td>✓</td><td>✓</td></tr>
-            <tr><td>Ideal For Civil Defense</td><td>—</td><td>—</td><td>✓</td></tr>
-        </table>
-    </section>
-
-    <section class="section">
-        <div class="center">
-            <h2>Ready To Communicate Anywhere?</h2>
-            <p>
-                Whether you're managing industrial operations, leading rescue teams, exploring remote regions, or building resilient communications networks, Smart Radio keeps your team connected.
-            </p>
-            <a href="mailto:onesmartradio@gmail.com" class="btn">Contact Us</a>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <h2 style="margin-bottom:20px;">SMART RADIO ECOSYSTEM</h2>
-        <p>Voice Everywhere • Never Lose Your Team • Everything Everywhere</p>
-        <br>
-        <p>OEM Manufacturing</p>
-        <p>Distribution Partners</p>
-        <p>Strategic Investors Welcome</p>
-        <br>
-        <p>Email: <a href="mailto:onesmartradio@gmail.com">onesmartradio@gmail.com</a></p>
-        <br>
-        <p>© 2026 Smart Radio Ecosystem</p>
-    </footer>
-
-</body>
-</html>
